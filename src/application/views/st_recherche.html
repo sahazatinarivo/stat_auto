@@ -1,0 +1,35 @@
+{% include 'st_header.html' %}
+<div class="container-fluid">
+	<div>
+		<input type="text" class="form-control" id="recherche-liste" placeholder="Tapez votre cle de recherche">
+	</div><br>
+	<div id="contenu_result_liste">
+		<table class="table table-stripted table-bordered">
+			<thead>
+				<tr>
+					<th width="90%" class="text-center">{% if _cln %} {{ _cln }} {% endif %}</th>
+					<th width="10%" class="text-center">ACTION</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% if _prs and _prs|length > 0 %}
+					{% for _pres in _prs %}
+					<tr>
+						<td> <i><strong>{{ _pres.cln }}</strong></i></td>
+						<td class="text-center"><i class="btn btn-primary fa fa-angle-right" id="btn-vers-saisie-{{ _pres.id }}"></i></td>
+					</tr>
+					{% endfor %}
+				{% else %}
+					<tr>
+						<td class="alert alert-danger"><center><i>Aucun resultat pour votre cle de recherche</i></center></td>
+						<td class="alert alert-danger"></td>
+					</tr>
+				{% endif %}
+			</tbody>
+		</table>
+	</div>
+	<div class="alert alert-default" id="block-loader-ajax">
+		<span><img src="#" class="loader_gif"> Recherche....</span>
+	</div>
+</div>
+{% include 'st_footer.html' %}

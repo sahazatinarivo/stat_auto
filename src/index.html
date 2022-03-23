@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MASK STAT AUTO</title>
+
+        <link rel="icon" type="image/png" href="datas/images/logo_st.PNG"/>
+        <link rel="stylesheet" href="core/lib/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="core/lib/bootstrap/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="core/lib/bootstrap/ionicon/css/ionicons.min.css">
+        <link rel="stylesheet" href="core/css/style.css">
+        <link rel="stylesheet" href="core/css/theme.min.css">
+        <link rel="stylesheet" href="core/lib/skins/skin-blue-light.min.css">
+        <link rel="stylesheet" href="assets/bad.css" />
+        
+        <!-- LIBRAIRIES -->
+        <script src="core/lib/air/AIRAliases.js" ></script>
+        <script src="core/lib/air/md5.js" ></script>
+        <script src="core/lib/air/AIRIntrospector.js" ></script>
+        <script src="core/lib/utils/jquery-2.0.3.min.js" type="text/javascript"></script>
+        <script src="core/lib/utils/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+        <script src="core/lib/utils/jQuery.equalHeights.js"></script>
+        <script src="core/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="core/lib/utils/fastclick.js"></script>
+        <script src="core/lib/utils/nj2.js"></script>
+        <script src="core/lib/utils/jquery.base64.min.js"></script>
+        <script src="core/lib/air/cryptage.js"></script>
+        <script src="core/lib/utils/jquery.Jcrop.min.js"></script>
+        <script src="core/lib/flot/jquery.flot.js" type="text/javascript"></script>
+        <script src="core/lib/flot/jquery.flot.resize.js" type="text/javascript"></script>
+        <script src="core/lib/datatables/jquery.dataTables.js" type="text/javascript"></script>
+        <script src="core/scripts/common.js" type="text/javascript"></script>
+        
+        <!-- outils -->
+        <script src="core/scripts/parameters.js"></script>
+        <script src="core/lib/air/dbtools.js"></script>
+        <script src="core/lib/utils/session.js"></script>
+        
+        <!-- models -->
+        <script src="application/models/users.js"></script>
+        <script src="application/models/m_params.js"></script>
+        <script src="application/models/m_liste.js"></script>
+        <script src="application/models/m_mask.js"></script>
+        
+        <!-- templates -->
+        <script src="core/scripts/templates.js"></script>
+        <script src="core/scripts/init-page.js"></script>
+        
+        <!-- Controller -->
+        <script src="application/controller/login.js"></script>
+        <script src="application/controller/user.js"></script>
+        <script src="application/controller/accueil.js"></script>
+        <script src="application/controller/recherche.js"></script>
+        <script src="application/controller/params.js"></script>
+        <script src="application/controller/envoi.js"></script>
+        <script src="application/controller/synchr.js"></script>
+        <script src="application/controller/mask.js"></script>
+        <!-- other lib -->
+        <script src="core/lib/air/b64.js"></script>
+    </head>
+    <body class="skin-blue {% if isLoginForm and isLoginForm==1 %}hold-transition login-page{% endif %}">
+        <div id="megadiv"></div>
+    </body>
+</html>

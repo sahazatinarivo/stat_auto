@@ -1,0 +1,67 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+/*background-color"rgb(199, 222, 252)";*/
+.content-wrapper, .main-footer { margin-left: 0 !important; }
+.local-top { padding-bottom: 0 !important; padding-top: 2px !important; }
+.slogan { color: #a62821; font-size: 25px; }
+.slogan p a { color: #a62821; font-size: 15px; cursor: pointer; }
+.aff-ascol span { font-size: 15px; padding: 5px !important; background-color: #f39c12 !important; padding-bottom: 1px !important; cursor: pointer !important; }
+.menu-appli { font-size: 25px; }
+.content-appli { margin-top: 75px; }
+.navbar-fixed-top { background-color: #fff5cf !important; border-bottom: 3px solid #f39c12; border-top: 1px solid #f39c12; }
+.user-menu .menu-top-target span { padding-top: 5px !important; }
+.user-menu .menu-top-target:hover, .user-menu.open .menu-top-target { background-color: #f39c12 !important; }
+.user-menu.open .menu-top-target .menu-appli { border-bottom: 8px solid #f39c12 !important; }
+.user-menu.open .menu-top-target .menu-appli .fa-chevron-down { display: block !important; }
+.blockdechamp tr td, .blockdechamp td { background: #fff6de none repeat scroll 0 0 !important; }
+.tr-impair, .tr-impair td { background: #dce4ff none repeat scroll 0 0 !important; }
+.blockdechamp tr.tr-impair, .blockdechamp tr.tr-impair td { background: #dce4ff none repeat scroll 0 0 !important; }
+.content-appli .table tbody tr td { font-size: 12px; }
+
+
+.block-scrollable .blockdechamp { overflow-x: scroll; }
+.blockdechamp thead th, .blockdechamp tbody td { max-width: 100px !important; min-width: 70px !important; }
+.blockdechamp { margin: 0 10px; }
+.blockdechamp-titre { font-style: italic; font-weight: bold; margin-left: 5px; margin-top: 5px; }
+.blockdechamp table thead, .blockdechamp table thead th { background: #666666 none repeat scroll 0 0; color: #fff; font-weight: bold; overflow: hidden; }
+.blockdechamp .table-bordered,
+.blockdechamp .table-bordered thead tr th, 
+.blockdechamp .table-bordered tbody tr th, 
+.blockdechamp .table-bordered tfoot tr th, 
+.blockdechamp .table-bordered thead tr td, 
+.blockdechamp .table-bordered tbody tr td, 
+.blockdechamp .table-bordered tfoot tr td { border: 1px solid #666666; }
+.blockdechamp .table-bordered thead tr th { border: 1px solid #FAFAFA; }
+.panel-primary.block-saisi .panel-heading { background: #dfdfdf none repeat scroll 0 0; }
+.block-saisi .panel-heading .panel-title h5, .text-bold {
+    font-weight: bold;
+}
+.blockdechamp table tr td:hover {
+    background: #999999 none repeat scroll 0 0 !important;
+}
+.blockdechamp-grandtitre {
+    background: #001144 none repeat scroll 0 0;
+    color: #fafafa;
+    font-weight: bold;
+    margin: 0 25px 25px;
+    padding: 5px;
+}
+.blockdechamp .field-cnt, .blockdechamp .field-cnt { margin: 0 25px 25px; }
+td .blockdechamp .field-cnt, td .blockdechamp .field-cnt { margin: 0 5px 5px !important; }
+#block-N0_S1_P4_I39 tr td:first-child, #block-N0_S1_P4_I39 tr th:first-child { display: none !important; }
+
+.table-tdb { margin-top:20px; }
+.table-tdb, .table-tdb > thead > tr > th, .table-tdb > tbody > tr > td{ border:1px solid #dd4b39 !important; }
+.blockdechamp .table th { min-width: 100px !important; }
+.blockdechamp .table .field-cnt { min-width: 80px !important; }
+.blockdechamp .table td { min-width: 80px !important; }
+.blockdechamp .table .field-cnt .input-numeric { min-width: 60px !important; }

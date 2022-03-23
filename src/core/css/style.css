@@ -1,0 +1,13 @@
+.login-box-body{background-color: #1b2a47!important;}
+.input-login,.input-params{font-family: impact;font-size: 16px;color: #43383e;line-height: 1.2;position: relative;display: block;width: 100%;height: 62px;background: #fff;border-radius: 31px!important;padding: 0 35px 0 35px;}
+.btn-login{max-width: 160px!important;height: 62px;text-align: center!important;background-color: #333333!important;border-radius: 31px!important;border-color: #333333!important;font-family: impact;font-size: 16px;text-align: center!important;color: #fff;}
+.text-white{color: white!important;}
+#recherche-liste{ margin-top: 15px; }
+#titre_accueil{text-align: center!important;color: red!important;}
+#block-loader-ajax{display: none!important;text-align: center!important;}
+.icone-entete{font-size: 40px;}
+.icone-entete-i{border-radius: 50%!important;}
+.loader-gif{display: none;}
+.span-stock-array{display: none;}
+.blocks-mask{background-color: #ededed;}
+.container-mask{background-color: white;padding-left: 40px;padding-right: 40px;padding-top: 20px;margin-left:50px;margin-right:50px;}

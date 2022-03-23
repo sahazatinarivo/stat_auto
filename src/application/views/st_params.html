@@ -1,0 +1,42 @@
+﻿<div class="content-appli">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="login-box">
+                <div class="login-box-body">
+                    <form class="form-vertical" id="params-form" action="javascript: void(0);">
+                        <div class="login-logo">
+                            <a class="text-white"><i><img src="core/images/logo_st.PNG"> | MASK</i></a>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input class="form-control input-params" type="text" name="lien-ws-input" placeholder="Lien webservice"/>
+                        </div>
+                        <div class="form-group has-feedback">
+                            <input class="form-control input-params" type="text" name="cle-ws-input" placeholder="clé webservice"/>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12" id="cnt_btn-login">
+                                {% if erreur %}
+                                <center class="loader-login alert alert-danger">{{ erreur }} </center>
+                                {% endif %}
+                                <center>
+                                    <button type="button" class="btn btn-success btn-block btn-flat btn-login" id="params-submit">
+                                    Suivant <strong><i class="fa fa-angle-right"></i></strong>
+                                    </button>
+                                </center>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% if isLoginForm and isLoginForm==1 %} 
+<style>
+    .skin-blue{ background-color: #1b2a47; }
+</style>
+{% else %} 
+<style>
+    .skin-blue{ background-color: white; }
+</style>
+{% endif %}

@@ -1,0 +1,50 @@
+{% include 'st_header.html' %}
+
+<div class="blocks-mask">
+	<br>
+	<div class=" container-mask">
+		<div class="row pages-blocks">
+			<div class="btn-group btn-group-justified">
+		    	{% if pages and pages|length>0 %}
+		    		{% for page in pages %}
+		    			<a href="javascript:void(0)" class="btn btn-{% if iPge and page.iPg and iPge == page.iPg %}default{% else %}primary{% endif %}" {% if iPge and page.eSsi and page.eSsi == 1 %}id="page-mask-[{{ page.iPg }}]-[ {% if iLst %}{{ iLst }}{% endif %}]"{% else %} style="opacity: 0.7;cursor: no-drop;" {% endif %}>
+			        		<i class="fa fa-{% if iPge and page.eSsi and page.eSsi == 1 %}check-circle{% else %}ban{% endif %}" style="float: left;"></i>
+			        		{{ page.nPg }}
+			        	</a>
+			        {% endfor %}
+		        {% endif %}
+		    </div> 
+		</div>
+		<br>
+		<div class="row mask-blocks">
+			{% if mask and mask|length>0 %}
+		    	{% for masks in mask %}
+					{{ masks.html }}
+					<input type="hidden" id="stock_slug_pers" value="{% if iLst %} {{ iLst }} {% endif %}">
+				{% endfor %}
+	        {% endif %}
+		</div>
+		<br>
+		<div class="row btn-save-blocks">
+			<div id="footer-mask" class="container-fluid">
+				<div class="col-md-4">
+					<a href="#" class="btn btn-primary form-control" id="passer_page_precedent" data-identif="[{% if iPge %}{{ iPge }}{% endif %}][{% if iLst %}{{ iLst }}{% endif %}]">
+						<i class="fa fa-angle-left"></i> Précedent
+					</a>
+				</div>
+				<div class="col-md-4">
+					<button type="button" class="btn btn-success form-control" id="save_donne_saisie" data-identif="[{% if iPge %}{{ iPge }}{% endif %}][{% if iLst %}{{ iLst }}{% endif %}]">
+						<i class="fa fa-save"></i> Enregistrer
+					</button>
+				</div>
+				<div class="col-md-4">
+					<a href="#" class="btn btn-primary form-control" id="passer_page_suivant" data-identif="[{% if iPge %}{{ iPge }}{% endif %}][{% if iLst %}{{ iLst }}{% endif %}]">
+						Suivant <i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+			</div><br>
+		</div>
+	</div><br>
+</div>
+
+{% include 'st_footer.html' %}

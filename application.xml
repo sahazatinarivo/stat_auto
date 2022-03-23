@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<application xmlns="http://ns.adobe.com/air/application/3.7">
+    <id>stat-auto.app</id>
+    <versionNumber>1.0</versionNumber>
+    <filename>Stat_auto</filename>
+    <customUpdateUI>false</customUpdateUI>
+    <name>MASK STAT AUTO</name>
+    <description>MASK STAT AUTO DESKTOP</description>
+    <copyright>Copyright (C) 2021 Sahaza .:sahazatinarivo@gmail.com:. Tout droits reservés.</copyright>
+    <initialWindow>
+        <title>MASK STAT AUTO</title>
+        <content>src/index.html</content>
+        <visible>true</visible>
+        <transparent>false</transparent>
+        <systemChrome>standard</systemChrome>
+        <aspectRatio>portrait</aspectRatio>
+        <width>1024</width>
+        <height>700</height>
+        <minSize>1024 700</minSize>
+        <resizable>false</resizable>
+        <x>0</x>
+        <y>0</y>
+    </initialWindow>
+</application>

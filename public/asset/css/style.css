@@ -1,0 +1,40 @@
+#header-front{
+	height: auto;
+	text-align: center;
+}
+.logo-front-1{
+	height: 100px;
+	margin-bottom: 5px;
+}
+#titre_accueil{
+	text-align: center;
+	font-style: italic;
+	color: red;
+}
+.info-aucune{
+	text-align: center;
+}
+.content-mask .span-stock-array{
+	display: none;
+}
+#recherche_liste{
+	border-radius: 0px;
+	height: 50px;
+}
+#block-loader-ajax{
+	display: none;
+	text-align: center;
+	background-color: #edededed;
+	border-radius: 0px;
+}
+#loader_gif{
+	display: none;
+	margin-top: -5px;
+	float: left;
+	height: 30px;
+}
+.sans_logo{
+	border: 1px solid #ccc;
+	padding: 30px;
+	border-radius: 50%;
+}

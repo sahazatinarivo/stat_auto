@@ -1,0 +1,11 @@
+#block_installation{background-color: #1b2a47;margin-top: 50px;padding: 10px;border-radius: 5px;color: white;}
+#Logo_txt{font-family: Brush Script MT;font-size: 70px;margin-left: -15px;}
+#logo_st{font-family: Snell Roundhand;font-size: 60px;}
+.form-class-database{background-color: white;color: gray;margin: 10px;}
+.span-num-list{float: right;}
+.btn-suivant{float: right;}
+#body-installation{background-color: gray;}
+#msg_success{color: #3c763d;}
+#msg_errors{color: #a94442;}
+#block_etap_3{height: 150px;}
+#ce_partie{text-align: center;font-family: impact;font-size: 60px;margin-top: 80px;}

@@ -122,6 +122,7 @@ class Migration
 				  `id` int(11) NOT NULL AUTO_INCREMENT,
 				  `slug` varchar(255) DEFAULT NULL,
 				  `nom` varchar(255) DEFAULT NULL,
+				  `saisie` varchar(255) DEFAULT NULL,
 				  `mail` varchar(255) DEFAULT NULL,
 				  `mdpss` varchar(255) DEFAULT NULL,
 				  `sasie` int(11) DEFAULT NULL,

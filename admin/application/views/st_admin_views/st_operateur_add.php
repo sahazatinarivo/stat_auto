@@ -26,8 +26,8 @@
 			  		</div>
 			  		<div class="col-md-9">
 			  			<select name="type_operat" class="form-control input-operateur">
-			  				<option value="uns" <?php if (isset($saisie) && $saisie=="uns") echo "selected"; ?>>saisie 1</option>
-			  				<option value="deuxs" <?php if (isset($saisie) && $saisie=="deuxs") echo "selected"; ?>>saisie 2</option>
+			  				<option value="1" <?php if (isset($saisie) && $saisie=="1") echo "selected"; ?>>saisie 1</option>
+			  				<option value="2" <?php if (isset($saisie) && $saisie=="2") echo "selected"; ?>>saisie 2</option>
 			  			</select>
 			  		</div>
 			  	</div>

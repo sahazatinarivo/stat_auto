@@ -4,9 +4,9 @@
     		@foreach($page as $pages)
     			@php 
                     if(session()->get('saisie_user') == 'uns'){
-                        $etat = $pages->etat_active_uns; 
+                        $etat = $pages->etat_active_1;
                     }else{
-                        $etat = $pages->etat_active_deuxs; 
+                        $etat = $pages->etat_active_2; 
                     }
     				$sPg = $pages->slug;
     			@endphp

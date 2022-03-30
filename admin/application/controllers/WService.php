@@ -72,7 +72,7 @@ class WService extends Afficher {
 		$_keyO = isset($_POST['_key']) ? $_POST['_key'] : "";
 		$data = array();
 		if ($_keyA == $_keyO) {
-			$data['col'] = $this->_w->getColListe('st_datas_uns');
+			$data['col'] = $this->_w->getColListe('st_datas_1s');
 			$data['res'] = "ok";
 		}else{
 			$data['res'] = "ko";
@@ -162,7 +162,7 @@ class WService extends Afficher {
 		$data = array();
 		if ($_keyA == $_keyO) {
 			$dSasie = isset($_POST['_dss']) ? $_POST['_dss'] : "";
-			$clDats = $this->_w->getColListe('st_datas_uns');
+			$clDats = $this->_w->getColListe('st_datas_1s');
 			for ($i=0; $i < count($dSasie) ; $i++) { 
 				$value = array();
 				foreach ($clDats as $key) {
@@ -170,16 +170,16 @@ class WService extends Afficher {
 						$value[$key->Field] = $dSasie[$i][$key->Field];
 					}
 				}
-				$siEx = $this->db->from('st_datas_uns')
+				$siEx = $this->db->from('st_datas_1s')
 							 	 ->where('id_liste',$dSasie[$i]['id_liste'])
 							 	 ->where('quest',$dSasie[$i]['quest'])
 							 	 ->get()->result();
 				if (count($siEx) > 0) {
 					$this->db->where('id_liste',$dSasie[$i]['id_liste']);
 					$this->db->where('quest',$dSasie[$i]['quest']);
-					$this->db->update('st_datas_uns',$value);
+					$this->db->update('st_datas_1s',$value);
 				}else{
-					$this->db->insert('st_datas_uns',$value);
+					$this->db->insert('st_datas_1s',$value);
 				}
 			}
 			$data['res'] = "ok";

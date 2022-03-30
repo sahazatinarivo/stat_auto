@@ -50,7 +50,7 @@ class Mask extends Model
     }
 
     public static function insertData($data){
-        $sQl = DB::table('st_datas_uns')
+        $sQl = DB::table('st_datas_1s')
         			->insert($data);
 
         return $sQl;
@@ -103,7 +103,7 @@ class Mask extends Model
     }
 
     public static function updateData($data,$where){
-        $sQl = DB::table('st_datas_uns')
+        $sQl = DB::table('st_datas_1s')
                     ->update($data)
                     ->where('quest','=',$where);
 
@@ -163,7 +163,7 @@ class Mask extends Model
     }
 
     public static function getDataByPers($liste,$quest,$saisie){
-        $sQl = DB::table('st_datas_'.$saisie.'')
+        $sQl = DB::table('st_datas_'.$saisie.'s')
                     ->where('id_liste','=',$liste)
                     ->where('quest','=',$quest)
                     ->get();

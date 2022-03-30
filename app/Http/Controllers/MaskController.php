@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\StPages;
-use App\StDatasUns;
-use App\StDatasDeuxs;
+use App\StDatas_1;
+use App\StDatas_2;
 use App\StThemes;
 use App\StPageActive;
 use App\Mask;
@@ -78,17 +78,17 @@ class MaskController extends Controller
         $data = null;
         if (count($ifEx) > 0) {
             $idprs = Mask::getBySlug($pers);
-            if ($saisie == "uns") {
-                $data = StDatasUns::where("id_liste","=",$idprs)->where("quest","=",$iChp["ligne"])->first();
+            if ($saisie == "1") {
+                $data = StDatas_1::where("id_liste","=",$idprs)->where("quest","=",$iChp["ligne"])->first();
             }else{
-                $data = StDatasDeuxs::where("id_liste","=",$idprs)->where("quest","=",$iChp["ligne"])->first();
+                $data = StDatas_2::where("id_liste","=",$idprs)->where("quest","=",$iChp["ligne"])->first();
             }
             
         }else{
-            if ($saisie == "uns") {
-                $data = new StDatasUns();
+            if ($saisie == "1") {
+                $data = new StDatas_1();
             }else{
-                $data = new StDatasDeuxs();
+                $data = new StDatas_2();
             }
         }
 

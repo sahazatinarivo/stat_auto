@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class StDatasUns extends Model
+class StDatas_2 extends Model
 {
     //
 }

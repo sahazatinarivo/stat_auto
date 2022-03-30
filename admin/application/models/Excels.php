@@ -17,13 +17,13 @@ class Excels extends CI_Model {
 	}
 
 	public function distQest(){
-		$sQl = "SELECT DISTINCT(quest) as lgne FROM st_datas_uns";
+		$sQl = "SELECT DISTINCT(quest) as lgne FROM st_datas_1s";
 		return $this->db->query($sQl)->result();
 	}
 
 	public function getCountQst($cln,$note,$quest){
 		$sQl = $this->db->select('COUNT(quest) as nbrQst')
-						->from('st_datas_uns')
+						->from('st_datas_1s')
 						->where($cln,$note)
 						->where('quest',$quest)
 						->get()->result();
@@ -36,7 +36,7 @@ class Excels extends CI_Model {
 
 	public function getCnQst($quest){
 		$sQl = $this->db->select('COUNT(quest) as nbrQst')
-						->from('st_datas_uns')
+						->from('st_datas_1s')
 						->where('quest',$quest)
 						->get()->result();
 		$nbrQst = 0;
@@ -48,7 +48,7 @@ class Excels extends CI_Model {
 
 	public function getColonneStat($cLn){
 		$sQl = $this->db->select('DISTINCT('.$cLn.')')
-						->from('st_datas_uns')
+						->from('st_datas_1s')
 						->order_by($cLn,'ASC')
 						->get()->result();
 
@@ -56,7 +56,7 @@ class Excels extends CI_Model {
 	}
 
 	public function distIdliste(){
-		$sQl = "SELECT DISTINCT(id_liste) as id_liste FROM st_datas_uns";
+		$sQl = "SELECT DISTINCT(id_liste) as id_liste FROM st_datas_1s";
 		return $this->db->query($sQl)->result();
 	}
 
@@ -70,7 +70,7 @@ class Excels extends CI_Model {
 				
 		$sQl .= "FROM
 				st_liste_evalue l
-				INNER JOIN st_datas_uns d
+				INNER JOIN st_datas_1s d
 				ON l.id = d.id_liste GROUP BY d.id_liste";
 		return $this->db->query($sQl)->result();
 	}
@@ -85,7 +85,7 @@ class Excels extends CI_Model {
 				
 		$sQl .= "FROM
 				st_liste_evalue l
-				INNER JOIN st_datas_uns d
+				INNER JOIN st_datas_1s d
 				ON l.id = d.id_liste GROUP BY d.id_liste";
 		return $this->db->query($sQl)->result();
 	}
@@ -123,7 +123,7 @@ class Excels extends CI_Model {
 
 
 	public function champDatas(){
-		$sQl = "DESCRIBE st_datas_uns";
+		$sQl = "DESCRIBE st_datas_1s";
 		$Query = $this->db->query($sQl)->result();
 
 		return $Query;
@@ -136,7 +136,7 @@ class Excels extends CI_Model {
 					COLUMN_TYPE as limits,
 					IS_NULLABLE as nulls
 				FROM INFORMATION_SCHEMA.COLUMNS
-				WHERE table_name = 'st_datas_uns' 
+				WHERE table_name = 'st_datas_1s' 
 				AND COLUMN_NAME='$clnn'";
 		$stdata = $this->db->query($sQl)->result();
 

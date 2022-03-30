@@ -11,7 +11,7 @@
 		</fieldset>
 	</div>
 	<div id="bas_nv_table">
-		<button type="button" id="cree-table-liste" value="datas_uns">Executer</button>
+		<button type="button" id="cree-table-liste" value="datas_1s">Executer</button>
 	</div>
 	<hr>
 	<table class="table table-striped table-bordered table-sm">

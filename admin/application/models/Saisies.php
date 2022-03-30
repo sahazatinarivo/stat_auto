@@ -16,8 +16,8 @@ class Saisies extends CI_Model {
 					B.$cLns as colonneB,
 					Oa.nom as oper_1,
 					Ob.nom as oper_2
-				FROM   st_datas_uns A
-				INNER JOIN st_datas_deuxs B ON A.quest = B.quest
+				FROM   st_datas_1s A
+				INNER JOIN st_datas_2s B ON A.quest = B.quest
 				INNER JOIN st_operateur Oa ON A.user_save = Oa.id
 				INNER JOIN st_operateur Ob On B.user_save = Ob.id 
 				WHERE  A.$cLns <>  B.$cLns";

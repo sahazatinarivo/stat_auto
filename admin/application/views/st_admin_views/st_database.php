@@ -18,9 +18,9 @@
 
         <!-- Earnings (Monthly) Card Example -->
         <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-success shadow h-100 py-2" style="border-bottom: <?php if (isset($table) and $table=="datas_uns") { echo "5px"; }else{ echo "0px"; } ?> solid #1cc88a">
+            <div class="card border-left-success shadow h-100 py-2" style="border-bottom: <?php if (isset($table) and $table=="datas_1s") { echo "5px"; }else{ echo "0px"; } ?> solid #1cc88a">
                 <div class="card-body">
-                    <a href="<?php echo base_url(); ?>index.php/database.html/datas_uns" class="row no-gutters align-items-center">
+                    <a href="<?php echo base_url(); ?>index.php/database.html/datas_1s" class="row no-gutters align-items-center">
                         <div class="col mr-2">
                          	<i class=" fa fa-database"></i>
                         </div>

@@ -44,8 +44,8 @@ class Migration
 	}
 
 	public function create_st_datas_1(){
-		$sQl = 'DROP TABLE IF EXISTS `st_datas`;
-				CREATE TABLE `st_datas_1` (
+		$sQl = 'DROP TABLE IF EXISTS `st_datas_1s`;
+				CREATE TABLE `st_datas_1s` (
 				  `id` int(11) NOT NULL AUTO_INCREMENT,
 				  `id_liste` int(11) DEFAULT NULL,
 				  `quest` varchar(255) DEFAULT NULL,
@@ -60,8 +60,8 @@ class Migration
 	}
 
 	public function create_st_datas_2(){
-		$sQl = 'DROP TABLE IF EXISTS `st_datas`;
-				CREATE TABLE `st_datas_2` (
+		$sQl = 'DROP TABLE IF EXISTS `st_datas_2s`;
+				CREATE TABLE `st_datas_2s` (
 				  `id` int(11) NOT NULL AUTO_INCREMENT,
 				  `id_liste` int(11) DEFAULT NULL,
 				  `quest` varchar(255) DEFAULT NULL,

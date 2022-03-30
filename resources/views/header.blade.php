@@ -49,7 +49,7 @@
               <li><a href="{{ Route('liste') }}"><i class="fa fa-list"></i><strong> Liste evaluer</strong></a></li>
             </ul>
             <ul class="nav navbar-nav" style="margin-left: 60%;font-family: impact;">
-              <li><a href="javascript:void(0)">SAISIE @if(session()->get('saisie_user') == 'uns') 1 @else 2 @endif</a></li>
+              <li><a href="javascript:void(0)">SAISIE @if(session()->get('saisie_user') == '1') 1 @else 2 @endif</a></li>
             </ul>
             <ul class="nav navbar-nav"  style="float: right;">
               <li><a href="{{ asset('logout.html') }}"><i class="fa fa-arrow-circle-right"></i><strong> Deconnecter</strong></a></li>

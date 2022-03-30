@@ -52,8 +52,8 @@ class Import extends Afficher {
 		$tables = isset($_GET['{t}']) ? $_GET['{t}']: "";
 		if ($nomCln !=="") {
 			$this->dbforge->drop_column("st_".$tables, $nomCln);
-			if ($table == "datas_uns") {
-				$this->dbforge->drop_column("st_datas_deuxs",$nomCln);
+			if ($table == "datas_1s") {
+				$this->dbforge->drop_column("st_datas_",$nomCln);
 			}
 			redirect('database.html/'.$tables);
 		}
@@ -81,7 +81,7 @@ class Import extends Afficher {
 		$nomCln = isset($_POST['nChmp']) ? $_POST['nChmp'] : null;
 		$data = array();
 		if ($nomCln !== null) {
-			$sChmp = $this->_excel->selectColonne($nomCln,"st_datas_uns");
+			$sChmp = $this->_excel->selectColonne($nomCln,"st_datas_1s");
 			foreach ($sChmp as $sChmps => $s) {
 				$data['nom'] = $s->nom;
 				$data['nul'] = $s->nulls;
@@ -115,8 +115,8 @@ class Import extends Afficher {
         }
 
 		$this->dbforge->add_column("st_".$table,$fields);
-		if ($table == "datas_uns") {
-			$this->dbforge->add_column("st_datas_deuxs",$fields);
+		if ($table == "datas_1s") {
+			$this->dbforge->add_column("st_datas_2s",$fields);
 		}
 	}
 
@@ -139,7 +139,7 @@ class Import extends Afficher {
 
 		$this->dbforge->modify_column("st_".$table,$fields);
 		if ($table == "datas_uns") {
-			$this->dbforge->modify_column("st_datas_deuxs",$fields);
+			$this->dbforge->modify_column("st_datas_2s",$fields);
 		}
 	}
 

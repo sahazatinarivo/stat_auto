@@ -10,7 +10,6 @@ class AutreConnections
 
 	public function getDB(){
 		$db = new SQLite3('../database/database.sqlite');
-		
 		return $db;
 	}
 

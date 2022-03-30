@@ -22,7 +22,7 @@ class Settings extends CI_Model {
 	}
 
 	public function getParamStock(){
-		$sQl1 = $this->db->query("DESCRIBE st_datas_1")->result();
+		$sQl1 = $this->db->query("DESCRIBE st_datas_1s")->result();
 
 		$sQl2 = 'SELECT id ';
 		foreach ($sQl1 as $sQl1s => $n) {

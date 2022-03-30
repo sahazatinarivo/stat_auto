@@ -3,7 +3,7 @@
     	@if($page)
     		@foreach($page as $pages)
     			@php 
-                    if(session()->get('saisie_user') == 'uns'){
+                    if(session()->get('saisie_user') == '1'){
                         $etat = $pages->etat_active_1;
                     }else{
                         $etat = $pages->etat_active_2; 

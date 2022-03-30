@@ -35,4 +35,4 @@
 </table>
 <hr>
 <button class="btn btn-danger btn-sm" id="annuler-modif-table"><i class="fa fa-remove"></i> Annuler</button>
-<button class="btn btn-primary btn-sm" id="run-modif-table" value="datas_uns"><i class="fa fa-save"></i> Enregistrer la modification</button>
+<button class="btn btn-primary btn-sm" id="run-modif-table" value="datas_1s"><i class="fa fa-save"></i> Enregistrer la modification</button>

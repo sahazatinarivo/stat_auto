@@ -26,7 +26,7 @@
 	$etapSv = (int)$etapes+1;
 
 	if ((int)$insTrm == 3) {
-		header('location:'.$conf->base_url().'admin');
+		header('location:'.$conf->base_url().'public');
 	}else{
 		require_once'ressource/header.php';
 		if ($etapes > 0) {

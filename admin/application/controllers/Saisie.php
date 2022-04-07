@@ -17,8 +17,8 @@ class Saisie extends Afficher {
 		$data = array();
 		$cPers = $this->db->from('st_liste_evalue')->get()->result();
 		$cPags = $this->db->from('st_pages')->get()->result();
-		$pAuns = $this->db->from('st_page_actives')->where('etat_active_uns',1)->get()->result();
-		$pAdex = $this->db->from('st_page_actives')->where('etat_active_deuxs',1)->get()->result();
+		$pAuns = $this->db->from('st_page_actives')->where('etat_active_1',1)->get()->result();
+		$pAdex = $this->db->from('st_page_actives')->where('etat_active_2',1)->get()->result();
 		$tSais = count($cPags) * count($cPers);
 		$data['saisieUns'] = (count($pAuns) * 100) / $tSais;
 		$data['saisieDex'] = (count($pAdex) * 100) / $tSais;

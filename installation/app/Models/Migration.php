@@ -138,8 +138,8 @@ class Migration
 				  `id` int(11) NOT NULL AUTO_INCREMENT,
 				  `id_liste` int(11) DEFAULT NULL,
 				  `page` int(11) DEFAULT NULL,
-				  `etat_active_uns` int(11) DEFAULT NULL,
-				  `etat_active_deuxs` int(11) DEFAULT NULL,
+				  `etat_active_1` int(11) DEFAULT NULL,
+				  `etat_active_2` int(11) DEFAULT NULL,
 				  `created_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
 				  `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
 				  PRIMARY KEY (`id`)

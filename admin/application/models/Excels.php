@@ -68,7 +68,7 @@ class Excels extends CI_Model {
 					$sQl .=	",SUM(IF(d.quest = '".str_replace("'","_",$q->lgne)."', d.".$cLnn.",0)) as '".str_replace("'","_",$q->lgne)."'";
 				}
 				
-		$sQl .= "FROM
+		$sQl .= " FROM
 				st_liste_evalue l
 				INNER JOIN st_datas_1s d
 				ON l.id = d.id_liste GROUP BY d.id_liste";
@@ -83,7 +83,7 @@ class Excels extends CI_Model {
 					$sQl .=	",GROUP_CONCAT(IF(d.quest = '".str_replace("'","_",$q->lgne)."', d.".$cLnn.",0)) as '".str_replace("'","_",$q->lgne)."'";
 				}
 				
-		$sQl .= "FROM
+		$sQl .= " FROM
 				st_liste_evalue l
 				INNER JOIN st_datas_1s d
 				ON l.id = d.id_liste GROUP BY d.id_liste";

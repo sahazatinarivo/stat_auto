@@ -20,8 +20,8 @@ class Saisie extends Afficher {
 		$pAuns = $this->db->from('st_page_actives')->where('etat_active_1',1)->get()->result();
 		$pAdex = $this->db->from('st_page_actives')->where('etat_active_2',1)->get()->result();
 		$tSais = count($cPags) * count($cPers);
-		$data['saisieUns'] = (count($pAuns) * 100) / isset($tSais) <> 0 ? $tSais : 1;
-		$data['saisieDex'] = (count($pAdex) * 100) / isset($tSais) <> 0 ? $tSais : 1;
+		$data['saisieUns'] = (count($pAuns) * 100) / isset($tSais) <> 0 ? $tSais : 0;
+		$data['saisieDex'] = (count($pAdex) * 100) / isset($tSais) <> 0 ? $tSais : 0;
 		$this->affiche('etat_saisie',$data);
 	}
 

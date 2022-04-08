@@ -30,9 +30,9 @@ class Export extends Afficher {
         if ($cln !== "") {
             $type = $this->_exc->getColDatas($cln);
             if ($type !== "int") {
-                $data["donne"] = $this->_exc->queryExports($Qst,$cln,$lst,$clnAct !== ""? $clnAct : "id";
+                $data["donne"] = $this->_exc->queryExports($Qst,$cln,$lst,$clnAct !== ""? $clnAct : "id");
             }else{
-                $data["donne"] = $this->_exc->queryExport($Qst,$cln,$lst,$clnAct !== ""? $clnAct : "id";
+                $data["donne"] = $this->_exc->queryExport($Qst,$cln,$lst,$clnAct !== ""? $clnAct : "id");
             }
             $data['type'] = $type;
             $data["quest"] = $Qst;

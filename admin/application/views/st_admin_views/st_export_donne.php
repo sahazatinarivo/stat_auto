@@ -39,7 +39,7 @@
 		      <tr>
 		        <th class="text-center">Nom et prénom(s)</th>
 		        <?php if (isset($quest)) { ?>
-		        	<?php $scln = 100/count($quest); ?> 
+		        	<?php $scln = 100/ count($quest) <> 0 ? count($quest) : 1; ?> 
 			        <?php foreach ($quest as $quests => $q) { ?>
 			        	<th style="width: <?php echo $scln ?> %"  class="text-center"><?php echo str_replace("_"," ", explode("]", $q->lgne)[1]); ?></th>
 			    	<?php } ?>

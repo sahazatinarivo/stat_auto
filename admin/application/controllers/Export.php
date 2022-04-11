@@ -20,7 +20,7 @@ class Export extends Afficher {
         $data = array();
         
         $pSearch = $this->db->from('st_recherche')->limit('1')->get()->result();
-        $clnAct = "";
+        $clnAct = "id";
         if (is_array($pSearch)) {
             foreach ($pSearch as $pSearchs => $p) {
                 $clnAct = $p->colonne;
@@ -30,9 +30,9 @@ class Export extends Afficher {
         if ($cln !== "") {
             $type = $this->_exc->getColDatas($cln);
             if ($type !== "int") {
-                $data["donne"] = $this->_exc->queryExports($Qst,$cln,$lst,$clnAct !== ""? $clnAct : "id");
+                $data["donne"] = $this->_exc->queryExports($Qst,$cln,$lst,$clnAct);
             }else{
-                $data["donne"] = $this->_exc->queryExport($Qst,$cln,$lst,$clnAct !== ""? $clnAct : "id");
+                $data["donne"] = $this->_exc->queryExport($Qst,$cln,$lst,$clnAct);
             }
             $data['type'] = $type;
             $data["quest"] = $Qst;

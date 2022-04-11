@@ -38,8 +38,8 @@
 		    <thead id="header-export-donne">
 		      <tr>
 		        <th class="text-center">Nom et prénom(s)</th>
-		        <?php if (isset($quest)) { ?>
-		        	<?php $scln = 100/ count($quest) <> 0 ? count($quest) : 1; ?> 
+		        <?php if (isset($quest) && count($quest) <> 0) { ?>
+		        	<?php $scln = 100/ count($quest); ?> 
 			        <?php foreach ($quest as $quests => $q) { ?>
 			        	<th style="width: <?php echo $scln ?> %"  class="text-center"><?php echo str_replace("_"," ", explode("]", $q->lgne)[1]); ?></th>
 			    	<?php } ?>
